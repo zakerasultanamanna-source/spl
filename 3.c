@@ -1,12 +1,16 @@
 #include<stdio.h>
-int main()
+int main ()
 {
-    int time=16;
-    if(time<12)
-    printf("good morning");
-else if(time<18)
-printf("good day");
-else
-printf("good evening");
-return 0;
+    int i=0;
+    while(i<40)
+    {
+        if(i==4)
+        {
+            i++;
+            continue;
+        }
+        printf("%d\n",i);
+        i++;
+    }
+    return 0;
 }
